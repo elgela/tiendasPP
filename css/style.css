@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.navbar {
+    position: absolute;
+    display: none;
+    background-color: rgb(186, 234, 172);
+    height: 100vh;
+    width: 15em;
+}
+
+.navbar a {
+    display: block;
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    margin-top: 4em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    text-decoration: none;
+}
+
+.menu-btn {
+    position: absolute;
+    display: flex;
+    margin: 1em;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40px;
+    height: 35px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-btn span {
+    height: 5px;
+    background: #333;
+    border-radius: 2px;
+    transition: all 0.4s ease-in-out;
+}
+
+.menu-btn.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.menu-btn.active span:nth-child(2) {
+  opacity: 0; /* desaparece la línea del medio */
+}
+
+.menu-btn.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(9px, -9px);
+}
+
+.hero img {
+    width: 100%;
+    height: 100vh;
+}
+
+.mapa1,
+.mapa2 {
+    text-align: center;
+}
+
+.ofertas,
+.mercado,
+.bazar {
+    display: block;
+}
+
+.ofertas img,
+.mercado img,
+.bazar img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+@media (min-width: 870px) {
+    .navbar a {
+        margin-top: 2.5em;
+    }
+    
+    .ubicacion {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .ubicacion .mapa {
+        display: grid;
+    }
+
+    .ofertas,
+    .mercado,
+    .bazar {
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr;
+    }
+    
+    .ofertas img,
+    .mercado img,
+    .bazar img {
+        height: 35rem;
+        width: 40rem;
+        margin: 15px;
+    }
+
+    .titulo h1 {
+        text-align: center;
+    }
+}
