@@ -1,9 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     margin: 0;
 }
@@ -79,9 +73,17 @@ body {
 .mercado img,
 .bazar img {
     width: 100%;
-    margin-bottom: 20px;
+    max-height: 30rem;
+    margin-bottom: 20px;    
 }
 
+.col-md-6 h3 {
+    text-align: center;
+}
+
+.col-md-6 p {
+    margin-left: 20px;
+}
 
 @media (min-width: 870px) {
     .navbar a {
@@ -99,20 +101,41 @@ body {
 
     .ofertas,
     .mercado,
-    .bazar {
+    .bazar,
+    .row {
         display: grid;
-        grid-template-columns: 0.5fr 0.5fr;
+        grid-template-columns: 2fr 2fr;
     }
     
     .ofertas img,
     .mercado img,
-    .bazar img {
-        height: 35rem;
-        width: 40rem;
-        margin: 15px;
+    .bazar img,
+    .row video {
+        height: 40rem;
+        /* width: 50%; */
+        /* margin: 10px; */
     }
 
     .titulo h1 {
         text-align: center;
     }
+
+    #posts {
+        display: flex;
+    }
+}
+
+
+@media (max-width: 990px) {
+
+    .navbar a {
+        margin-top: 2.2em;
+    }
+
+    #posts {
+        display: flex;
+        grid-template-columns: 1fr 1fr;
+        /* margin: 25px; */
+    }
+    
 }
