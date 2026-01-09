@@ -95,7 +95,7 @@ document.getElementById("verMas").addEventListener("click", () => {
 //////// blog videos ////////////
 const data = [
     {
-      "video": "videos/convertido.wma",
+      "video": "videos/convertido.mp4",
       "titulo": "¿En que te convertiste Tandil?",
       "autor": "PP",
       "tema": "Gustavo limpia parabrisas",
@@ -103,7 +103,7 @@ const data = [
       "contenido": "Muestra de productos de tiendasPP y el parabrisas deja de estar limpio despues de la 'limpieza'",
     },
     {
-      "video": "videos/ruta30.wma",
+      "video": "videos/ruta30.mp4",
       "titulo": "Ruta 30",
       "autor": "PP",
       "tema": "Camioneta Rota",
