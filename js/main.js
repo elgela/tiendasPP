@@ -10,10 +10,10 @@ menuBtn.addEventListener('click', () => {
 });
 
 ///////service worker/////////
-if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("/sw.js")
-    .then(() => console.log("Service Worker registrado"));
-}
+// if ("serviceWorker" in navigator) {
+//   navigator.serviceWorker.register("/sw.js")
+//     .then(() => console.log("Service Worker registrado"));
+// }
 
 let deferredPrompt;
 
